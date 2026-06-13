@@ -41,9 +41,9 @@ main{background:var(--cream)}.section{padding:84px 24px}.container{max-width:118
     position:fixed;
     bottom:20px;
     right:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
+    background:#d4af37;
+    color:black;
+    padding:12px 18px;
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
@@ -52,5 +52,5 @@ main{background:var(--cream)}.section{padding:84px 24px}.container{max-width:118
 }
 
 .whatsapp-button:hover{
-    transform:scale(1.05);
+    background:#c49b1f;
 }
