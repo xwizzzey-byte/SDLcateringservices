@@ -1,5 +1,280 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SDL Catering Worcester | Elite Catering Services</title><meta name="description" content="Luxury catering in Worcester for corporate events, parties, funerals and gatherings."><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><nav class="nav"><a class="brand" href="index.html"><img src="logo.jpeg" alt="SDL Catering logo"><span>SDL Catering</span></a><button class="menu-toggle" aria-label="Open menu">☰</button><div class="nav-links"><a class="active" href="index.html">Home</a><a class="" href="about.html">About</a><a class="" href="services.html">Services</a><a class="" href="gallery.html">Gallery</a><a class="" href="packages.html">Packages</a><a class="" href="reviews.html">Reviews</a><a class="" href="contact.html">Contact</a><a class="nav-cta" href="contact.html">Get a Quote</a></div></nav></header>
-<section class="hero"><div class="hero-content fade show"><div class="eyebrow">Excellence in every bite</div><h1>Elite Catering for Unforgettable Occasions</h1><p>SDL Catering provides refined, reliable catering across Worcester and surrounding areas for corporate events, parties, funerals, private gatherings and more.</p><div class="btn-row"><a class="btn gold" href="contact.html">Request a Quote</a><a class="btn outline" href="services.html">Explore Services</a></div></div></section>
-<section class="section"><div class="container fade"><div class="section-title"><h2>Luxury service. Personal attention.</h2><p>Whether you need a respectful funeral reception, polished corporate buffet or memorable celebration, we create catering that feels effortless from start to finish.</p></div><div class="grid"><div class="card"><h3>Corporate Events</h3><p>Professional catering for meetings, launches, training days and business lunches.</p></div><div class="card"><h3>Parties & Gatherings</h3><p>Beautiful food for birthdays, anniversaries, family occasions and community events.</p></div><div class="card"><h3>Funeral Catering</h3><p>Thoughtful, reliable catering for wakes and memorial gatherings with care and discretion.</p></div></div></div></section>
-<section class="section alt"><div class="container split fade"><div class="panel"><h2>Worcester catering made simple</h2><p>Tell us your event type, guest numbers, date and preferred food style. We will help shape a catering plan that suits the occasion.</p><div class="list"><span>Small and large gatherings</span><span>Flexible menu options</span><span>Delivery, setup and service options</span><span>Friendly communication from enquiry to event day</span></div></div><div><h2 class="title">Designed around your event</h2><p>Every occasion has different needs. SDL Catering offers tailored catering packages for formal business events, relaxed family parties, buffets, funeral receptions and bespoke celebrations.</p><br><a class="btn gold" href="packages.html">View Packages</a></div></div></section>
-<footer class="footer"><img src="logo.jpeg" alt="SDL Catering logo"><h3>SDL Elite Catering Services</h3><p>Worcester & surrounding areas</p><p>07785 998502 • sdlcateringservices@gmail.com</p></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDL Catering | Luxury Event Catering</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style> 
+
+:root{
+--gold:#d4af37;
+--black:#0d0d0d;
+--white:#ffffff;
+--grey:#f7f7f7;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Inter,sans-serif;
+background:#fff;
+color:#333;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+width:100%;
+z-index:999;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(12px);
+}
+
+nav{
+max-width:1400px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+}
+
+.logo{
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+font-weight:700;
+color:var(--gold);
+}
+
+.nav-links{
+display:flex;
+gap:40px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:var(--gold);
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+color:white;
+}
+
+.hero h1{
+font-family:"Cormorant Garamond",serif;
+font-size:5rem;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-bottom:40px;
+opacity:.9;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+background:var(--gold);
+color:black;
+font-weight:600;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section{
+padding:120px 8%;
+}
+
+.title{
+font-family:"Cormorant Garamond",serif;
+font-size:3.5rem;
+text-align:center;
+margin-bottom:60px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.service{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.service:hover{
+transform:translateY(-10px);
+}
+
+.service h3{
+margin-bottom:15px;
+font-size:1.5rem;
+}
+
+.testimonials{
+background:var(--grey);
+}
+
+.quote{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:1.2rem;
+padding:30px;
+}
+
+.cta{
+background:black;
+color:white;
+text-align:center;
+}
+
+.cta h2{
+font-family:"Cormorant Garamond",serif;
+font-size:3rem;
+margin-bottom:20px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.nav-links{
+display:none;
+}
+
+.title{
+font-size:2.5rem;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">SDL Catering</div>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+
+<h1>Luxury Catering For Extraordinary Events</h1>
+
+<p>
+Exceptional cuisine, flawless presentation and unforgettable experiences.
+</p>
+
+<a href="#" class="btn">Request A Quote</a>
+
+</div>
+</section>
+
+<section class="section">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Wedding Catering</h3>
+<p>Bespoke menus crafted for your perfect day.</p>
+</div>
+
+<div class="service">
+<h3>Corporate Events</h3>
+<p>Professional catering for conferences and launches.</p>
+</div>
+
+<div class="service">
+<h3>Private Dining</h3>
+<p>Fine dining experiences in your chosen venue.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section testimonials">
+
+<h2 class="title">What Clients Say</h2>
+
+<div class="quote">
+“SDL Catering delivered a flawless experience from start to finish.
+The food was exceptional and the service was impeccable.”
+</div>
+
+</section>
+
+<section class="section cta">
+
+<h2>Let's Create Something Exceptional</h2>
+
+<a href="#" class="btn">Contact Us</a>
+
+</section>
+
+<footer>
+© 2026 SDL Catering • Luxury Catering & Event Services
+</footer>
+
+</body>
+</html>
