@@ -1,1 +1,94 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Gallery | SDL Catering Worcester</title><meta name="description" content="Gallery page for SDL Catering food, buffets and events."><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><nav class="nav"><a class="brand" href="index.html"><img src="logo.jpeg" alt="SDL Catering logo"><span>SDL Catering</span></a><button class="menu-toggle" aria-label="Open menu">☰</button><div class="nav-links"><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class="" href="services.html">Services</a><a class="active" href="gallery.html">Gallery</a><a class="" href="packages.html">Packages</a><a class="" href="reviews.html">Reviews</a><a class="" href="contact.html">Contact</a><a class="nav-cta" href="contact.html">Get a Quote</a></div></nav></header><section class="section" style="padding-top:150px"><div class="container fade show"><div class="section-title"><h1>Gallery</h1><p>Replace these placeholders with your own food, buffet and event photos.</p></div><div class="gallery-grid"><div class="gallery-item"><span>Buffet Setup</span></div><div class="gallery-item"><span>Corporate Event</span></div><div class="gallery-item"><span>Party Catering</span></div><div class="gallery-item"><span>Fresh Platters</span></div><div class="gallery-item"><span>Celebration Table</span></div><div class="gallery-item"><span>Premium Service</span></div><div class="gallery-item"><span>Private Gathering</span></div><div class="gallery-item"><span>Event Display</span></div></div></div></section><footer class="footer"><img src="logo.jpeg" alt="SDL Catering logo"><h3>SDL Elite Catering Services</h3><p>Worcester & surrounding areas</p><p>07785 998502 • sdlcateringservices@gmail.com</p></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | SDL Catering Worcester</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f8f8f8;
+    margin:0;
+    padding:40px;
+}
+
+.back-link{
+    display:inline-block;
+    margin-bottom:30px;
+    color:#b8860b;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+h1{
+    text-align:center;
+    color:#b8860b;
+    margin-bottom:10px;
+}
+
+.intro{
+    text-align:center;
+    color:#666;
+    max-width:700px;
+    margin:0 auto 40px auto;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:0.3s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+@media(max-width:768px){
+    body{
+        padding:20px;
+    }
+
+    .gallery img{
+        height:280px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<a class="back-link" href="/">← Back to Home</a>
+
+<h1>SDL Catering Gallery</h1>
+
+<p class="intro">
+Take a look at some of our freshly prepared fruit platters, luxury cupcakes and catering displays for events across Worcester and the surrounding areas.
+</p>
+
+<div class="gallery">
+
+<img src="0294DB4C-32D1-49B4-8B63-D48F0FCEBE16.jpg" alt="Cupcakes">
+<img src="0E7D282C-4100-4B24-9AFA-D04682F62D01.jpg" alt="Cupcakes">
+<img src="1617782D-A906-4861-BB1F-E94B1A7C0890.jpg" alt="Cupcakes">
+<img src="61E701D7-71A2-41A2-A36A-05C2B32CEC49.jpg" alt="Cupcakes">
+<img src="645CABED-F708-4254-80ED-49467FE0ADCF.jpg" alt="Cupcakes">
+<img src="7A8F384A-9A45-4E6E-8D03-03DBB455B9BC.jpg" alt="Fruit Display">
+<img src="94AE32BA-04FE-49A1-B74E-E008C434C7AD.jpg" alt="Fruit Platters">
+<img src="97C0B94A-7D09-490F-8617-1C43E0B917FD.jpg" alt="Fruit Bowl">
+<img src="BD20CA32-50C8-4341-845C-1569B232B857.jpg" alt="Cupcakes">
+<img src="E184A423-7458-45EC-B64F-88C2FBBE1C25.jpg" alt="Chocolate Cupcakes">
+
+</div>
+
+</body>
+</html>
