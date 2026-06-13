@@ -5,301 +5,155 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SDL Catering | Luxury Event Catering</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style> 
-
+<style>
 :root{
---gold:#d4af37;
---black:#0d0d0d;
---white:#ffffff;
---grey:#f7f7f7;
+  --gold:#d4af37;
+  --black:#0d0d0d;
+  --white:#ffffff;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-font-family:Inter,sans-serif;
-background:#fff;
-color:#333;
-overflow-x:hidden;
+  font-family:Inter,sans-serif;
+  color:#fff;
 }
 
 header{
-position:fixed;
-width:100%;
-z-index:999;
-background:rgba(0,0,0,.75);
-backdrop-filter:blur(12px);
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:999;
+  background:rgba(0,0,0,.88);
 }
 
 nav{
-max-width:1400px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
+  max-width:1400px;
+  margin:auto;
+  padding:22px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px;
 }
 
 .logo{
-font-family:"Cormorant Garamond",serif;
-font-size:2rem;
-font-weight:700;
-color:var(--gold);
+  font-family:"Cormorant Garamond",serif;
+  font-size:2rem;
+  font-weight:700;
+  color:var(--gold);
 }
 
 .nav-links{
-display:flex;
-gap:40px;
-list-style:none;
+  display:flex;
+  gap:32px;
+  align-items:center;
+  list-style:none;
 }
 
 .nav-links a,
 .nav-links a:link,
 .nav-links a:visited{
-    color:white !important;
-    text-decoration:none;
-    transition:.3s;
+  color:white !important;
+  text-decoration:none !important;
+  font-weight:500;
 }
 
 .nav-links a:hover,
-.nav-links a:active{
-    color:var(--gold) !important;
+.nav-links a.active{
+  color:var(--gold) !important;
 }
 
 .hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
+  min-height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+  url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 20px 60px;
 }
 
 .hero-content{
-max-width:900px;
-color:white;
+  max-width:900px;
 }
 
 .hero h1{
-font-family:"Cormorant Garamond",serif;
-font-size:5rem;
-line-height:1.1;
-margin-bottom:20px;
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(3rem,8vw,6rem);
+  line-height:1;
+  margin-bottom:25px;
 }
 
 .hero p{
-font-size:1.2rem;
-margin-bottom:40px;
-opacity:.9;
+  font-size:1.3rem;
+  margin-bottom:35px;
 }
 
 .btn{
-display:inline-block;
-padding:16px 40px;
-background:var(--gold);
-color:black;
-font-weight:600;
-text-decoration:none;
-border-radius:50px;
-transition:.3s;
+  display:inline-block;
+  background:var(--gold);
+  color:#000 !important;
+  text-decoration:none !important;
+  padding:16px 42px;
+  border-radius:40px;
+  font-weight:700;
 }
 
-.btn:hover{
-transform:translateY(-3px);
-}
+@media(max-width:800px){
+  nav{
+    flex-direction:column;
+    gap:18px;
+  }
 
-.section{
-padding:120px 8%;
-}
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+  }
 
-.title{
-font-family:"Cormorant Garamond",serif;
-font-size:3.5rem;
-text-align:center;
-margin-bottom:60px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-
-.service{
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.service:hover{
-transform:translateY(-10px);
-}
-
-.service h3{
-margin-bottom:15px;
-font-size:1.5rem;
-}
-
-.testimonials{
-background:var(--grey);
-}
-
-.quote{
-max-width:900px;
-margin:auto;
-text-align:center;
-font-size:1.2rem;
-padding:30px;
-}
-
-.cta{
-background:black;
-color:white;
-text-align:center;
-}
-
-.cta h2{
-font-family:"Cormorant Garamond",serif;
-font-size:3rem;
-margin-bottom:20px;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:3rem;
-}
-
-.nav-links{
-display:none;
-}
-
-.title{
-font-size:2.5rem;
-}
-
-nav a,
-nav a:link,
-nav a:visited{
-    color:white !important;
-    text-decoration:none !important;
-}
-
-nav a:hover,
-nav a:active{
-    color:var(--gold) !important;
+  .hero h1{
+    font-size:3rem;
+  }
 }
 </style>
-    header nav a,
-header nav a:link,
-header nav a:visited{
-    color:white !important;
-    text-decoration:none !important;
-}
-
-header nav a:hover,
-header nav a:active{
-    color:#d4af37 !important;
-}
 </head>
+
 <body>
 
 <header>
-<nav>
-<div class="logo">SDL Catering</div>
+  <nav>
+    <div class="logo">SDL Catering</div>
 
-<a class="home-link" href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="gallery.html">Gallery</a>
-<a href="packages.html">Packages</a>
-<a href="reviews.html">Reviews</a>
-<a href="contact.html">Contact</a>
-</ul>
-</nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
 <section class="hero">
-<div class="hero-content">
-
-<h1>Luxury Catering For Extraordinary Events</h1>
-
-<p>
-Exceptional cuisine, flawless presentation and unforgettable experiences.
-</p>
-
-<a href="#" class="btn">Request A Quote</a>
-
-</div>
+  <div class="hero-content">
+    <h1>Luxury Catering For Extraordinary Events</h1>
+    <p>Exceptional cuisine, flawless presentation and unforgettable experiences.</p>
+    <a class="btn" href="contact.html">Request A Quote</a>
+  </div>
 </section>
-
-<section class="section">
-
-<h2 class="title">Our Services</h2>
-
-<div class="services">
-
-<div class="service">
-<h3>Wedding Catering</h3>
-<p>Bespoke menus crafted for your perfect day.</p>
-</div>
-
-<div class="service">
-<h3>Corporate Events</h3>
-<p>Professional catering for conferences and launches.</p>
-</div>
-
-<div class="service">
-<h3>Private Dining</h3>
-<p>Fine dining experiences in your chosen venue.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section testimonials">
-
-<h2 class="title">What Clients Say</h2>
-
-<div class="quote">
-“SDL Catering delivered a flawless experience from start to finish.
-The food was exceptional and the service was impeccable.”
-</div>
-
-</section>
-
-<section class="section cta">
-
-<h2>Let's Create Something Exceptional</h2>
-
-<a href="#" class="btn">Contact Us</a>
-
-</section>
-
-<footer>
-© 2026 SDL Catering • Luxury Catering & Event Services
-</footer>
 
 </body>
 </html>
