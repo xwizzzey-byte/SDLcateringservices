@@ -3,34 +3,449 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Packages | SDL Catering Worcester</title>
-<meta name="description" content="SDL Catering Services in Worcester">
+<title>Luxury Buffet Packages | SDL Elite Catering Services</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    background:#faf9f7;
+    font-family:'Poppins',sans-serif;
+    color:#222;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+.hero img{
+    width:140px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:'Cinzel',serif;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#777;
+    font-size:18px;
+}
+
+.gold-line{
+    width:120px;
+    height:3px;
+    background:#C9A34A;
+    margin:25px auto;
+    border-radius:20px;
+}
+
+.packages{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+.card{
+
+    background:white;
+
+    border:2px solid #C9A34A;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.card h2{
+
+font-family:'Cinzel';
+
+text-align:center;
+
+}
+
+.price{
+
+width:120px;
+
+height:120px;
+
+background:#C9A34A;
+
+border-radius:50%;
+
+margin:25px auto;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+font-weight:bold;
+
+font-size:28px;
+
+}
+
+.price span{
+
+font-size:14px;
+
+}
+
+.card ul{
+
+padding-left:18px;
+
+line-height:2;
+
+}
+
+.card a{
+
+display:block;
+
+margin-top:25px;
+
+text-align:center;
+
+background:#C9A34A;
+
+padding:14px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:black;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.card a:hover{
+
+background:black;
+
+color:#C9A34A;
+
+}
+
+.desserts{
+
+max-width:1100px;
+
+margin:80px auto;
+
+padding:20px;
+
+}
+
+.desserts h2{
+
+font-family:'Cinzel';
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.dessert-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.dessert{
+
+background:white;
+
+border:2px solid #C9A34A;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.contact{
+
+text-align:center;
+
+padding:70px 20px;
+
+}
+
+.contact h2{
+
+font-family:'Cinzel';
+
+}
+
+.button{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:16px 35px;
+
+background:#C9A34A;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+color:black;
+
+}
+
+.button:hover{
+
+background:black;
+
+color:#C9A34A;
+
+}
+
+</style>
+
 </head>
+
 <body>
-<header class="site-header">
-  <nav class="nav">
-    <a class="brand" href="index.html"><img src="logo.jpeg" alt="SDL Catering logo"><span>SDL Catering</span></a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <ul class="nav-links">
-      <li><a  href="index.html">Home</a></li>
-      <li><a  href="about.html">About</a></li>
-      <li><a  href="services.html">Services</a></li>
-      <li><a  href="gallery.html">Gallery</a></li>
-      <li><a class="active" href="packages.html">Packages</a></li>
-      <li><a  href="reviews.html">Reviews</a></li>
-      <li><a  href="contact.html">Contact</a></li>
-    </ul>
-    <a class="nav-cta" href="contact.html">Get a Quote</a>
-  </nav>
-</header>
-<main><section class="page-hero"><h1>Packages</h1><p>Simple catering options to help you plan your event with confidence.</p></section><section class="section"><div class="container"><div class="grid three"><div class="card"><h3>Small Gatherings</h3><p>Ideal for intimate family events, meetings and smaller occasions.</p></div><div class="card"><h3>Classic Buffet</h3><p>A balanced buffet selection for parties, funerals and community events.</p></div><div class="card"><h3>Premium Events</h3><p>Enhanced presentation and tailored options for larger or more formal occasions.</p></div></div><p style="text-align:center;margin-top:32px;color:#555">Contact SDL Catering for a tailored quote based on your date, guest numbers and menu preferences.</p></div></section></main>
-<footer class="footer">
-  <img src="logo.jpeg" alt="SDL Catering logo">
-  <p><strong>SDL Catering Services</strong></p>
-  <p>Worcester & surrounding areas</p>
-  <p><a href="tel:07785998502">07785 998502</a> · <a href="mailto:sdlcateringservices@gmail.com">sdlcateringservices@gmail.com</a></p>
-</footer>
-<script src="script.js"></script>
+
+<div class="hero">
+
+<img src="logo.jpeg" alt="SDL Elite Catering">
+
+<h1>Luxury Buffet Packages</h1>
+
+<div class="gold-line"></div>
+
+<p>Freshly Prepared • Premium Ingredients • Excellence In Every Bite</p>
+
+</div>
+
+<div class="packages">
+
+<div class="card">
+
+<h2>Classic Buffet</h2>
+
+<div class="price">
+
+£5.50
+
+<span>Per Person</span>
+
+</div>
+
+<h3>Includes</h3>
+
+<ul>
+
+<li>Selection of sandwiches</li>
+
+<li>Fresh salad garnish</li>
+
+<li>Sausage rolls</li>
+
+<li>Pork pies</li>
+
+<li>Savoury eggs</li>
+
+<li>Selection of crisps</li>
+
+</ul>
+
+<a href="contact.html">Book Now</a>
+
+</div>
+
+<div class="card">
+
+<h2>Deluxe Buffet</h2>
+
+<div class="price">
+
+£6.50
+
+<span>Per Person</span>
+
+</div>
+
+<h3>Includes</h3>
+
+<ul>
+
+<li>Selection of sandwiches & wraps</li>
+
+<li>Fresh salad garnish</li>
+
+<li>Sausage rolls</li>
+
+<li>Savoury eggs</li>
+
+<li>Pork pies</li>
+
+<li>Dips with finger salad</li>
+
+<li>Selection of crisps</li>
+
+<li>Fresh fruit platter</li>
+
+</ul>
+
+<a href="contact.html">Book Now</a>
+
+</div>
+
+<div class="card">
+
+<h2>Premium Buffet</h2>
+
+<div class="price">
+
+£8.00
+
+<span>Per Person</span>
+
+</div>
+
+<h3>Includes</h3>
+
+<ul>
+
+<li>Selection of sandwiches & wraps</li>
+
+<li>Fresh salad garnish</li>
+
+<li>Sausage rolls</li>
+
+<li>Savoury eggs</li>
+
+<li>Pork pies</li>
+
+<li>Dips with finger salad</li>
+
+<li>Selection of crisps</li>
+
+<li>Fresh fruit platter</li>
+
+<li>Cheese board</li>
+
+<li>Homemade potato salad</li>
+
+<li>Homemade coleslaw</li>
+
+<li>Salami meat platter</li>
+
+<li>Selection of olives</li>
+
+</ul>
+
+<a href="contact.html">Book Now</a>
+
+</div>
+
+</div>
+
+<div class="desserts">
+
+<h2>Homemade Desserts</h2>
+
+<div class="dessert-grid">
+
+<div class="dessert">
+
+<h3>🍰 Tray Bakes</h3>
+
+<h2>£1 Per Head</h2>
+
+</div>
+
+<div class="dessert">
+
+<h3>🍋 Lemon Drizzle Cake</h3>
+
+<h2>£1 Per Head</h2>
+
+</div>
+
+<div class="dessert">
+
+<h3>🧁 Luxury Cupcakes</h3>
+
+<h2>£2 Per Head</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="contact">
+
+<div class="gold-line"></div>
+
+<h2>Ready to Book?</h2>
+
+<p><strong>📞 07785 998502</strong></p>
+
+<p><strong>✉️ sdlcateringservices@gmail.com</strong></p>
+
+<a href="contact.html" class="button">Get Your Quote Today</a>
+
+</div>
+
 </body>
 </html>
