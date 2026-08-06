@@ -346,3 +346,8 @@ main{background:var(--cream)}.section{padding:84px 24px}.container{max-width:118
         display:none;
     }
 }
+/* Allow clicks to pass through gallery overlays */
+.gallery-item::after,
+.gallery-item span{
+    pointer-events:none;
+}
