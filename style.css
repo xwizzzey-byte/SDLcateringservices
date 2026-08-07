@@ -1204,3 +1204,79 @@ main{background:var(--cream)}.section{padding:84px 24px}.container{max-width:118
         gap:0;
     }
 }
+/* ==================================================
+   PRIVACY & TERMS PAGES
+================================================== */
+
+.legal-section{
+    background:#f8f3e8;
+}
+
+.legal-content{
+    max-width:900px;
+    padding:50px;
+    border:1px solid #e1d6ba;
+    border-radius:28px;
+    background:#fff;
+    box-shadow:0 20px 55px rgba(0,0,0,.06);
+}
+
+.legal-updated{
+    margin-bottom:32px;
+    color:#8a6910;
+    font-size:.85rem;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+.legal-content h2{
+    margin:36px 0 12px;
+    color:#171717;
+    font-family:"Cormorant Garamond",serif;
+    font-size:2rem;
+}
+
+.legal-content h2:first-of-type{
+    margin-top:0;
+}
+
+.legal-content p{
+    margin-bottom:15px;
+    color:#555;
+}
+
+.legal-content ul{
+    margin:8px 0 22px 24px;
+    color:#555;
+}
+
+.legal-content li{
+    margin-bottom:7px;
+}
+
+.legal-content a{
+    color:#98720d!important;
+    font-weight:700;
+}
+
+.footer-legal{
+    margin-top:12px;
+    font-size:.85rem;
+}
+
+.footer-legal a{
+    color:#d4af37!important;
+}
+
+@media(max-width:700px){
+
+    .legal-content{
+        padding:30px 20px;
+        border-radius:20px;
+    }
+
+    .legal-content h2{
+        font-size:1.7rem;
+    }
+}
